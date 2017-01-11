@@ -1,4 +1,4 @@
-# info4_201617_smdw
+# info4_201617_smd
 
 primer test
 
