@@ -2,7 +2,7 @@
     
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "cat.numancia.pong_sergi_curtu"
+        id          = "cat.numancia.pong_sergi_meneses"
         versionCode = "2" 
         version     = "0.0.02" >
 	
@@ -10,14 +10,14 @@
 
 	
 
-   <name>Pong SCB</name>
+   <name>Pong SMD </name>
 
    <description>
        Un pong fet per alumnes de 4t del Numància
     </description>
 
-    <author href="https://numancia.cat/intranet" email="sergi.curtu@numancia.cat">
-       Sergi Curtu
+    <author href="https://numancia.cat/intranet" email="smeneses46@iesnumancia.cat">
+       Sergi Meneses
     </author>
 
 	<content src="index.html"/>
