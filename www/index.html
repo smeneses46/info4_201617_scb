@@ -35,7 +35,93 @@
     	
 		<!-- AQUÍ VA CODI A MOSTRAR PER PANTALLA -->
                 <canvas id="canvas"></canvas>
-                 
+                float x = 0;
+float y = 0;
+float y_jugador_1 = 0;
+float y_jugador_2 = 0;
+
+void setup(){
+  size(640,480);
+  background(0);
+}
+
+void draw(){
+  
+  
+  background(0);
+
+
+   mark();
+   pilota();
+   limit_pantalla (); 
+   
+   keyPressed();
+   
+   barra_jugador_1();
+   barra_jugador_2();
+   
+}
+  
+  
+
+void keyPressed(){
+  
+  if (keyPressed) {
+    if (key == 's' || key == 'S'){
+       y_jugador_1 = y_jugador_1 + 10;
+       if (y_jugador_1>480-150){y_jugador_1=480-150;}
+ }
+    else if (key == 'w' || key == 'W') {
+        y_jugador_1 = y_jugador_1 - 10;
+       if (y_jugador_1<0){y_jugador_1=0;}
+  }
+    else if (key == 'l' || key == 'L') {
+       y_jugador_2 = y_jugador_2 + 10;
+       if (y_jugador_2>480-150){y_jugador_2=480-150;} // 480 és el limit de la pantalla i 150 l'altura de la raqueta
+  }
+    else if (key == 'o' || key == 'O') {
+       y_jugador_2 = y_jugador_2 - 10;
+       if (y_jugador_2<0){y_jugador_2=0;}
+       
+    }
+  }
+}
+
+void limit_pantalla (){
+  if((x + 300)<=0){
+      x = x + 10;    
+    }
+    if((x + 340)>=width){
+      x = x - 10;    
+    }
+    if((y + 220)<=0){
+      y = y + 10;    
+    }
+    if((y + 260)>=height){
+      y = y - 10;    
+    }
+
+}
+
+ 
+
+
+void pilota (){
+  fill(127,255,255);
+  ellipse ((width/2)+x,(height/2)+y,30,30);
+}
+
+void mark (){
+  fill(127,127,127);
+  rect(20,20,width-40,height-40);}
+  
+void barra_jugador_1(){ 
+  rect(width-600,y_jugador_1,20,150);
+}
+
+void barra_jugador_2(){
+  rect(width -60,y_jugador_2,20,150);
+}   
         
         	<style>
         	
@@ -75,5 +161,4 @@
 		<script src="vendors/fastclick.min.js" type="text/javascript"></script>    	 	
 		<script type="text/javascript" src="PushNotification.js"></script>
 		
-    </body>
-</html>
+    <
