@@ -1,5 +1,5 @@
-# info4_201617_smd
+# info4_201617_smdlp
 
-primer test
+primer test sergi
 
 l'objectiu és crear una apk per android
