@@ -1,7 +1,7 @@
 $(document).on('deviceready', function() {
 
      // determinem amplada alçada DISPOSITIU ------------------
-     var amplada_pantalla = screen.width ;		// 720px  --> SG_Note2
+     var amplada_pantalla = screen.width ;		// 720px  --> BQ_Aquaris U
      var alcada_pantalla = screen.height ; 		// 1280px
      var amplada_pantalla_CSS = window.innerWidth ; 	// 360px
      var alcada_pantalla_CSS = window.innerHeight ;	// 616px 
