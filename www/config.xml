@@ -3,14 +3,14 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "cat.numancia.pong_sergi_meneses"
-        versionCode = "6" 
-        version     = "0.1.06" >
+        versionCode = "7" 
+        version     = "0.1.07" >
 	
 	<!-- versionCode is optional and Android only -->
 
 	
 
-   <name>Pong SMD </name>
+   <name>Pong SMDlp </name>
 
    <description>
        Un pong fet per alumnes de 4t del Numància
