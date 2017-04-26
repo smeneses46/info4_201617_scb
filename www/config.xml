@@ -30,6 +30,7 @@
    	<!-- Customize your app and platform with the preference element. -->
 	<!-- 6.3.0. -> 6.5.0 16.04.2017 -->
    	<preference name="phonegap-version" value="cli-6.5.0" />
+	
    	
    	<!-- Per evitar gir de pantalla portait -> landscape 16.04.2017 ? no , millor així -->
 	<preference name="orientation"      value="portrait" />
